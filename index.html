@@ -10,7 +10,7 @@
 	</head>
 	<body>
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
 			  <a class="navbar-brand" href="#">HOME</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
@@ -24,56 +24,114 @@
 					        <a class="nav-link" href="#">Projects</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link" href="#">Tools</a>
+					        <a class="nav-link" href="#">Contact</a>
 					      </li>
 					       <li class="nav-item">
-					        <a class="nav-link" href="#">Contact</a>
+					        <a class="nav-link" href="#">Tools</a>
 					      </li>
 				    </ul>
 			  </div>
 		</nav>
-		<div>
-			<div class="container-fluid bg-secondary text-light min-vh-50 p-3 p-md-5">
-				<img src="./mikks.jpg">
+		<div id="landings" class="container-fluid mb-5">
+			<div class="bg-info text-light min-vh-100 p-3 p-md-5">
+				<img src="./images/mikks.jpg" width="250" class="mt-5 mt-md-0 rounded-circle">
 				<h1>Mikko Cadangan Berol</h1>
 				<h3>Full Stack Web Developer</h3>
 			</div>
 		</div>
 
 		
-		<div>
-			<h2>My Projects</h2>
+		<div id="projects" class="container-fluid">
+			<h2><a href="#">My Projects</a></h2>
 			<div class="d-lg-flex justify-content-center p-md-5">
-				<div class="card bg-dark col-xl-4 mb-5 mb-xl-0">
+				<div class="card bg-info col-xl-4 mb-5 mb-xl-0 border">
 					<div class="card-body">
-						<img src="./sketchup.jpg" class="card-img-top">
-						<h5 class="card-title text-light text-center">Sketchup Pro</h5>
+						<img src="./images/sketchup.jpg" class="card-img-top">
+						<h5 class="card-title text-light text-center m-2">Sketchup Pro</h5>
 						<h6 class="mb-2 text-light">In SketchUp, you can create 3D models of buildings, furniture, interiors, landscapes, and more. You can also customize the SketchUp interface to reflect the way you work. Share 3D models as walkthrough animations, scenes, or printouts, with realistic light and shadows. You can even print a model on a 3D printer.</h6>
 					</div>
 				</div>
-				<div class="card bg-dark col-xl-4 mb-5 mb-xl-0">
+				<div class="card bg-info col-xl-4 mb-5 mb-xl-0 border">
 					<div class="card-body">
-						<img src="./sketchup.jpg" class="card-img-top">
-						<h5 class="card-title text-light text-center">Vray</h5>
+						<img src="./images/vray.jpg" class="card-img-top img-fluid">
+						<h5 class="card-title text-light text-center m-2">Vray</h5>
 						<h6 class="mb-2 text-light">V-Ray gives you access to your own real-time digital camera, allowing for instant feedback and quick iterations with the ability to explore different materials and lighting. Share your projects with clients and collaborators via an executable file.</h6>
 					</div>
 				</div>
-				<div class="card bg-dark col-xl-4 mb-5 mb-xl-0">
+				<div class="card bg-info col-xl-4 mb-5 mb-xl-0 border">
 					<div class="card-body">
-						<img src="./sketchup.jpg" class="card-img-top">
-						<h5 class="card-title text-light text-center">Autocad</h5>
+						<img src="./images/autocad.jpg" class="card-img-top">
+						<h5 class="card-title text-light text-center m-2">Autocad</h5>
 						<h6 class="mb-2 text-light">It is a CAD-type software oriented to drawing and modeling in 2D and 3D. It allows the creation and modification of geometric models with an almost infinite capacity to develop all types of structures and objects.</h6>
 					</div>
 				</div>
 		</div>
 		
-		<div>
-			<h2>Tools</h2>
+		<div id="contact" class="container-fluid p-5">
+			<h2><a href="#">Contact</a></h2>
+				<div id="contact-section" class="row mt-3 d-flex justify-content-center text-center">
+							
+					<div class="col-sm-12 col-md-8 col-xl-4 mb-5">
+						<form id="form-col" class=" bg-primary">
+							<div class="form-group px-2 pt-2">
+								<label for="text">Full Name</label>
+								<input type="text" class="form-control" id="text" aria-describedby="text" placeholder="Full Name">
+							</div>
+
+							<div class="form-group px-2">
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email" aria-describedby="email" placeholder="name@example.com">
+							</div>
+
+							<div class="form-group px-2">
+								<label for="number">Contact Number</label>
+								<input type="number" class="form-control" id="number" aria-describedby="number" placeholder="+63 900 000 0000">
+							</div>
+
+							<div class="form-group px-2">
+								<label for="exampleFormControlTextarea1">Message</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+							</div>
+
+							<button type="button" class="btn btn-dark bg-light text-dark mb-3" data-toggle="modal" data-target="#modalDiv">Send</button>
+						</form>
+					</div>
+					<div class="col-sm-12 col-md-8 col-xl-4">
+						<a href="https://www.linkedin.com/in/mikko-berol-0277a9281/">
+							<img src="./images/linkedin.png" class="img-fluid mx-2" style="width: 50px; height: 50px;">
+						</a>
+						<a href="https://gitlab.com//">
+							<img src="./images/gitlab.png" class="img-fluid mx-2" style="width: 50px; height: 50px;">
+						</a>
+						<a href="https://facebook.com//">
+							<img src="./images/fb.png" class="img-fluid mx-2" style="width: 50px; height: 50px;">
+						</a>
+					</div>
+				</div>
+				<div id="modalDiv" class="modal" tabindex="-1">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title">Thank you for contacting us!</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <p>Message Succesfully Sent.</p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-dark bg-light text-dark" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		</div>
+
+		<div id="tools" class="container-fluid p-5">
+			<h2><a href="#">Tools</a></h2>
 		</div>
 		
-		<div>
-				<h2>Contact</h2>
-		</div>
 		
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
