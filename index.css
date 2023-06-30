@@ -2,6 +2,10 @@
 	font-family: 'Lato', sans-serif;
 }
 
+nav {
+	background-color: black;
+}
+
 #landings {
 	height: 100vh;
 }
@@ -9,11 +13,12 @@
 #projects {
 	height: 100vh;
 	text-align: center;
-	margin: 5;
 }
 
 #contact {
+	background-color: black;
 	height: 100vh;
+	color: white;
 }
 
 #tools {
