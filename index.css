@@ -21,6 +21,10 @@ nav {
 	color: white;
 }
 
+.card-body {
+	color: white;
+}
+
 #tools {
 	height: 100vh;
 }
